@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container" id="startPanel">
+      <div class="row p-5">
+        <div class="col mt-1"><button class="btn btn-primary" id="start">Başla</button></div>
+      </div>
+    </div>
+    <div class="container" id="soruPanel">
+      <div class="row p-5">
+        <div class="col">
+      
+          <p class="h3 p-5" id="quest"></p>
+
+          <div id="demo"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script>
+        var hak=1;
+
+        document.getElementById("soruPanel").style.display = "none";
+        document.getElementById("start").addEventListener("click",function(){
+          document.getElementById("startPanel").style.display="none";
+          document.getElementById("soruPanel").style.display = "block";
+          loadDoc()
+        });
+
+        function loadDoc() {
+          var soru=document.createElement("div");
+          soru.id="soru";
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              const question = JSON.parse(this.responseText);
+              var options = [0, 1, 2, 3].sort((a, b) => 0.5 - Math.random());
+              var answers = [];
+              document.getElementById("quest").innerHTML = question.questionItem;
+              answers.push(question.answer);
+              answers.push(question.wrong1);
+              answers.push(question.wrong2);
+              answers.push(question.wrong3);
+              // console.log(option);
+              options.forEach(option => {
+                var button = document.createElement("button");
+                button.value = option;
+                button.className = "btn btn-primary m-5";
+                button.textContent = answers[option];
+                button.addEventListener("click", function () {
+                //  this.value == 0 ? alert("Doğru") : alert("Yanlış");
+                  answerCheck(this.value);
+                });
+                  soru.appendChild(button);
+                document.getElementById("demo").append(soru);
+
+                console.log(option)
+              });
+              //    document.getElementById("demo").innerHTML = this.responseText;
+            }
+          };
+          xhttp.open("GET", "https://localhost:7079/api/Questions/"+hak, true);
+          xhttp.send();
+        }
+        function answerCheck(answer){
+          if(answer==0){
+            hak++;
+            document.getElementById("soru").remove();
+            if(hak==4){
+              document.getElementById("quest").innerHTML="KAZANDIN !!";
+            }else{
+              loadDoc();
+            }
+            
+          }else{
+            document.getElementById("demo").innerHTML="";
+            document.getElementById("quest").innerHTML="Kaybettin !!";
+            document.getElementById("start").textContent="Tekrar Oyna";
+            document.getElementById("startPanel").style.display="block";
+            hak=1;
+          }
+        }
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+[
+  {
+    "id": 2,
+    "questionItem": "Dünya üzerinde kaç tane resmi dil bulunmaktadır?",
+    "wrong1": "150",
+    "wrong2": "75",
+    "wrong3": "50",
+    "answer": "195",
+    "level": 2
+  },
+  {
+    "id": 3,
+    "questionItem": "İnsan vücudundaki en büyük organ hangisidir?",
+    "wrong1": "Akciğer",
+    "wrong2": "Kalp",
+    "wrong3": "Mide",
+    "answer": "Deri",
+    "level": 1
+  },
+  {
+    "id": 4,
+    "questionItem": "Nobel Barış Ödülü ilk defa hangi yıl verilmiştir?",
+    "wrong1": "1920",
+    "wrong2": "1955",
+    "wrong3": "1912",
+    "answer": "1901",
+    "level": 3
+  },
+  {
+    "id": 5,
+    "questionItem": "Güneş Sistemindeki en büyük gezegen hangisidir?",
+    "wrong1": "Dünya",
+    "wrong2": "Mars",
+    "wrong3": "Satürn",
+    "answer": "Jüpiter",
+    "level": 2
+  },
+  {
+    "id": 6,
+    "questionItem": "İlk bilgisayar programcısı kimdir?",
+    "wrong1": "Charles Babbage",
+    "wrong2": "Alan Turing",
+    "wrong3": "Grace Hopper",
+    "answer": "Ada Lovelace",
+    "level": 3
+  },
+  {
+    "id": 7,
+    "questionItem": "Dünyanın en yüksek dağı hangisidir?",
+    "wrong1": "K2",
+    "wrong2": "Mont Blanc",
+    "wrong3": "Denali",
+    "answer": "Everest",
+    "level": 2
+  },
+  {
+    "id": 8,
+    "questionItem": "İlk yazılı anayasa hangi ülke tarafından kabul edilmiştir?",
+    "wrong1": "Fransa",
+    "wrong2": "İngiltere",
+    "wrong3": "Almanya",
+    "answer": "ABD",
+    "level": 3
+  },
+  {
+    "id": 9,
+    "questionItem": "Hangi gezegen üzerinde yaşam belirtisi bulunmuştur?",
+    "wrong1": "Venüs",
+    "wrong2": "Jüpiter",
+    "wrong3": "Satürn",
+    "answer": "Mars",
+    "level": 2
+  },
+  {
+    "id": 10,
+    "questionItem": "Mona Lisa tablosunun sanatçısı kimdir?",
+    "wrong1": "Vincent van Gogh",
+    "wrong2": "Pablo Picasso",
+    "wrong3": "Claude Monet",
+    "answer": "Leonardo da Vinci",
+    "level": 1
+  },
+  {
+    "id": 11,
+    "questionItem": "Bir insanın normalde kaç tane kalp odacığı bulunur?",
+    "wrong1": "3",
+    "wrong2": "5",
+    "wrong3": "6",
+    "answer": "4",
+    "level": 2
+  },
+  {
+    "id": 12,
+    "questionItem": "İnsan vücudundaki en küçük kemik hangisidir?",
+    "wrong1": "Kafatası",
+    "wrong2": "Femur",
+    "wrong3": "Kürek kemiği",
+    "answer": "Yüzük kemiği",
+    "level": 1
+  },
+  {
+    "id": 13,
+    "questionItem": "Fransız Devrimi hangi yılda başlamıştır?",
+    "wrong1": "1788",
+    "wrong2": "1804",
+    "wrong3": "1820",
+    "answer": "1789",
+    "level": 3
+  },
+  {
+    "id": 14,
+    "questionItem": "Dünya'nın en büyük okyanusu hangisidir?",
+    "wrong1": "Atlantik Okyanusu",
+    "wrong2": "Hint Okyanusu",
+    "wrong3": "Arktik Okyanusu",
+    "answer": "Pasifik Okyanusu",
+    "level": 2
+  },
+  {
+    "id": 15,
+    "questionItem": "En çok konuşulan dil hangisidir?",
+    "wrong1": "İngilizce",
+    "wrong2": "Çince",
+    "wrong3": "Hintçe",
+    "answer": "Mandarin",
+    "level": 3
+  },
+  {
+    "id": 16,
+    "questionItem": "Türkiye'nin başkenti neresidir?",
+    "wrong1": "İstanbul",
+    "wrong2": "İzmir",
+    "wrong3": "Antalya",
+    "answer": "Ankara",
+    "level": 1
+  },
+  {
+    "id": 17,
+    "questionItem": "Bir yıl kaç gündür?",
+    "wrong1": "365",
+    "wrong2": "366",
+    "wrong3": "360",
+    "answer": "365.25",
+    "level": 2
+  },
+  {
+    "id": 18,
+    "questionItem": "Dünya'nın en büyük kıtası hangisidir?",
+    "wrong1": "Avrupa",
+    "wrong2": "Afrika",
+    "wrong3": "Antarktika",
+    "answer": "Asya",
+    "level": 3
+  },
+  {
+    "id": 19,
+    "questionItem": "Bir insanın normalde kaç tane beşiği vardır?",
+    "wrong1": "2",
+    "wrong2": "3",
+    "wrong3": "4",
+    "answer": "0",
+    "level": 1
+  },
+  {
+    "id": 20,
+    "questionItem": "Mozart'ın tam adı nedir?",
+    "wrong1": "Wolfgang Amadeus Bach",
+    "wrong2": "Johann Sebastian Mozart",
+    "wrong3": "Ludwig van Mozart",
+    "answer": "Wolfgang Amadeus Mozart",
+    "level": 2
+  }
+]

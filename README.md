@@ -1,1 +1,1 @@
-Genel kültür soruları gönderen bir api ajax.html dosyası soruları çekip size sorar 3 hakkınızda tüm sorulara cevap verirseniz oyunu kazanırsınız.
+Genel kültür soruları gönderen bir api ajax.html dosyası soruları çekip size sorar 3 hakkınızda tüm sorulara cevap verirseniz oyunu kazanırsınız. Entity framework ile sorular veritabanına kayıt olur. Kullanmak için Appsetting.json dosyasındaki connection stringi değiştirip, Package manager consoldan update-database komutunu uygulayın.
